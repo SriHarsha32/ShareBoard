@@ -1,0 +1,116 @@
+body {
+    background-color: #C0C0C0 ;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 70px;
+}
+#navi {
+    border: 0;
+    border-radius: 0;
+    min-height: 55px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-brand h1{
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.navbar-brand{
+    padding-top: 10px;
+}
+
+.navbar-toggle{
+    margin-top: 12px;
+}
+
+#mainh2{
+    color: #F5B041;
+    margin-bottom: 20px;
+}
+
+#nav-list{
+    background-color: #34495E;
+}
+
+.navbar-nav{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+    padding: 6px;
+}
+
+.description{
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+#sblogo{
+    width: 35px;
+    height: 30px;
+}
+
+#Brandname{
+    padding-top: 15px;
+    color: #0099cc;
+}
+
+.glyphicon{
+    padding-right: 5px;
+}
+
+#posts{
+    width:70%;
+    padding: 10px 50px;
+}
+
+#notifholder{
+    width:25%;
+    height: 400px;
+    overflow: auto;
+    position: fixed;
+    right: 50px;
+    top: 80px;
+
+}
+
+#addpost{
+    position: fixed;
+    bottom: 50px;
+    right: 80px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+}
+
+#addpost .glyphicon{
+    padding-right: 10px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.notif{
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.time{
+    float: right;
+    padding-right: 2px;
+}
+
+#posts{
+    padding-left: 150px;
+}

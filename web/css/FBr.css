@@ -1,0 +1,106 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 10, 2016, 6:44:22 PM
+    Author     : SriGanesha
+*/
+
+.facebook-reaction {  max-width: 100%; position: relative; }
+
+.like-btn { color: #777777; position: relative; cursor: pointer; padding: 20px 20px 0 0; }
+
+.like-btn:hover { color: #0db5e4; }
+
+.like-btn-default:before { font-family: FontAwesome; content: "\f087"; color: #FFFFFF; width: 22px; height: 22px; text-align: center; border-radius: 50%; font-weight: normal; line-height: 22px; background: #777777; }
+
+.like-btn-emo { display: inline-block; margin: 0 0px -3px 0; color: #FFFFFF; width: 22px; height: 22px; text-align: center; border-radius: 50%; font-weight: normal; line-height: 22px !important; background: #777777; }
+
+.reactions-box { height: 42px; min-width: 255px; width: auto; padding: 2px 10px; position: absolute; top: -40px; left: 1px; box-shadow: 1px 1px 2px #cccccc, -1px 0px 2px #eeeeee; border-radius: 44px 44px; display: none; background: #ffffff; }
+
+.reactions-box > li {margin:2px;}
+
+.reaction { list-style-type: none; cursor: pointer; display: table-cell; position: relative; text-align: center; padding-left: 2px; padding-right: 2px; margin:2px;}
+
+.like-btn:hover .reactions-box { display: block; }
+
+.reaction-like::after { font-family: FontAwesome; content: "\f087"; font-size: 2em; color: rgba(100,160,240,0); background-image: url('../images/reactions_like.png'); background-size: 25px 25px; background-repeat: no-repeat;}
+
+.reaction-love::after { font-family: FontAwesome; content: "\f004"; font-size: 2em; color: rgba(242, 82, 104,0); background-image: url('../images/reactions_love.png'); background-size: 25px 25px; background-repeat: no-repeat;}
+
+.reaction-haha::after { font-family: FontAwesome; content: "\f118"; font-size: 2em; color: rgba(240, 186, 21,0); background-image: url('../images/reactions_haha.png'); background-size: 25px 25px; background-repeat: no-repeat;}
+
+.reaction-wow::after { font-family: FontAwesome; content: "\f005"; font-size: 2em; color: rgba(240, 186, 21,0); background-image: url('../images/reactions_wow.png'); background-size: 25px 25px; background-repeat: no-repeat;}
+
+.reaction-sad::after { font-family: FontAwesome; content: "\f119"; font-size: 2em; color: rgba(240, 186, 21,0); background-image: url('../images/reactions_sad.png'); background-size: 25px 25px; background-repeat: no-repeat;}
+
+.reaction-angry::after { font-family: FontAwesome; content: "\f11a"; font-size: 2em; color: rgba(247, 113, 75,0); background-image: url('../images/reactions_angry.png'); background-size: 25px 25px; background-repeat: no-repeat;}
+
+.reaction-cancel::after { font-family: FontAwesome; content: "\f11a"; font-size: 2em; color: rgba(247, 113, 75,0); background-image: url('../images/reactions_cancel.png'); background-size: 25px 25px; background-repeat: no-repeat;}
+
+.like-btn:hover .reaction { opacity: 1; }
+
+.reaction:hover { transform: scale(1.3, 1.3); top: 2px }
+
+.reaction::before { display: inline-block; color: #ffffff; text-align: left; min-width: 80%; line-height: 17px; font-size: .6em; height: 17px; margin-left: auto; margin-right: auto; padding-left: 5px; padding-right: 5px; background-color: rgba(0, 0, 0, 1); border-radius: 20px; position: absolute; top: -20px; opacity: 0; transition: opacity .2s ease-in-out 0s; }
+
+.reaction:hover::before { opacity: 1 }
+
+.reaction-like::before { content: 'Like' }
+
+.reaction-love::before { content: 'Love' }
+
+.reaction-haha::before { content: 'Haha' }
+
+.reaction-wow::before { content: 'Wow' }
+
+.reaction-sad::before { content: 'Sad' }
+
+.reaction-angry::before { content: 'Angry' }
+
+.reaction-cancel::before { content: 'Cancel' }
+
+.like-stat { margin-top: 10px; }
+
+.like-btn-like { background: rgb(100,160,240); color: #ffffff; }
+
+.like-btn-like:before { font-family: FontAwesome; content: "\f087"; }
+
+.like-btn-love { background: rgb(242, 82, 104); color: #ffffff; }
+
+.like-btn-love:before { font-family: FontAwesome; content: "\f004"; }
+
+.like-btn-haha { background: rgb(240, 186, 21); color: #ffffff; }
+
+.like-btn-haha:before { font-family: FontAwesome; content: "\f118"; }
+
+.like-btn-wow { background: rgb(240, 186, 21); color: #ffffff; }
+
+.like-btn-wow:before { font-family: FontAwesome; content: "\f005"; }
+
+.like-btn-sad { background: rgb(240, 186, 21); color: #ffffff; }
+
+.like-btn-sad:before { font-family: FontAwesome; content: "\f119"; }
+
+.like-btn-angry { background: rgb(247, 113, 75); color: #ffffff; }
+
+.like-btn-angry:before { font-family: FontAwesome; content: "\f11a"; }
+
+.like-btn-cancel { background: rgb(247, 113, 75); color: #ffffff; }
+
+.like-btn-cancel:before { font-family: FontAwesome; content: "\f11a"; }
+
+.like-btn-text-like { color: rgb(88, 144, 255); }
+
+.like-btn-text-wow, .like-btn-text-haha, .like-btn-text-sad { color: rgb(240, 186, 21) }
+
+.like-btn-text-love { color: rgb(242, 82, 104) }
+
+.like-btn-text-angry { color: rgb(247, 113, 75); }
+
+.like-emo > span { display: inline-block; margin: 0 -3px -3px 0px; width: 22px; height: 22px; border: 1px solid #EEE; border-radius: 50%; text-align: center; }
+
+.like-details { margin-left: 10px; color: #9197a3; font-size: 12px; }
+
